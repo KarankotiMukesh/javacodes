@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      body{
+        margin:0;
+      }
+     .navbar{
+        overflow: hidden;
+        background: black;
+
+     }
+     .navbar a{
+        float: left;
+        font-size: 16px;
+        color: brown;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+     }
+   .dropdown{
+    float: left;
+    overflow: hidden;
+   }
+   .dropbtn .dropdown
+   {
+       font-size: 16px;
+       border: none;
+       outline: none;
+       color: aliceblue;
+       padding: 14px 16px;
+       font: inherit;
+       margin: 0%;
+   }
+   .navbar a:hover,.dropbtn:hover,.dropdown{
+      background-color: red;
+   }
+
+   .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: aquamarine;
+    width: auto;
+    left: 0%;
+
+   }
+   .dropdown-content .header{
+    background: green;
+  padding: 16px;   
+   color: aliceblue;
+}
+   .dropbtn:hover .dropdown-content{
+    display: block;
+   }
+  
+   .column
+   {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color:chartreuse ;
+    height: 250px;
+   }
+   .column a {
+  float: none;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.column a:hover {
+  background-color: #ddd;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height: auto;
+  }
+}
+    </style>
+</head>
+
+<body>
+    
+<div class="navbar">
+ <a href="#">Home</a>
+ <a href="#">News</a>
+ <div class="dropdown">
+    <button class="dropbtn" style="color: blue
+    ;">DropDown 
+
+    </button>
+    <div class="dropdown-content">
+        <div class="header">
+            <h1>Mega Menu</h1>  
+        </div>
+        <div class ="row">
+            <div class="column">
+                <h3>food</h3>
+                <a href="#">Biryani</a>
+                <a href="#">FastFood</a>
+                <a href="#">egg</a>
+            </div>
+            <div class="column">
+                <h3>snacks</h3>
+                <a href="#">chips</a>
+                <a href="#">mixture</a>
+                <a href="#">samosa</a>
+            </div>
+            <div class="column">
+                <h3>drinks</h3>
+                <a href="#">thumsup</a>
+                <a href="#">sprite</a>
+                <a href="#">Maza</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+</div>
+
+</body>
+</html>

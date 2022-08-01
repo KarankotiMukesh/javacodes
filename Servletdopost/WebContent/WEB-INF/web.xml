@@ -1,0 +1,13 @@
+<web-app>  
+  
+<servlet>  
+<servlet-name>p1</servlet-name>  
+<servlet-class>com.practice.Dopost.DoPost1</servlet-class>  
+</servlet>  
+  
+<servlet-mapping>  
+<servlet-name>p1</servlet-name>  
+<url-pattern>/hammer</url-pattern>  
+</servlet-mapping>  
+  
+</web-app>  

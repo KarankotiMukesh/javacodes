@@ -1,0 +1,21 @@
+<web-app>  
+ <servlet>  
+    <servlet-name>p1</servlet-name>  
+    <servlet-class>com.practice.ResquestDispatcher.Page1</servlet-class>  
+  </servlet>  
+  <servlet>  
+    <servlet-name>p2</servlet-name>  
+    <servlet-class>com.practice.ResquestDispatcher.Page2</servlet-class>  
+  </servlet>  
+  <servlet-mapping>  
+    <servlet-name>p1</servlet-name>  
+    <url-pattern>/servlet1</url-pattern>  
+  </servlet-mapping>  
+  <servlet-mapping>  
+    <servlet-name>p2</servlet-name>  
+    <url-pattern>/servlet2</url-pattern>  
+  </servlet-mapping>  
+  <welcome-file-list>  
+   <welcome-file>Dispatch.html</welcome-file>  
+  </welcome-file-list>  
+</web-app>  
